@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Let's football it!</title>
+        <meta name="description" content="football football football!">
+        <meta name="keywords" content="football,manchester united,football team,football news">
+        <meta charset="utf-8">
+        <link href="info.css" rel="stylesheet" type="css"/>
+        <link href="test1.css" rel="stylesheet" type="css"/>
+            
+        <style>
+        .main_title{
+          font-size: 25px;
+        }
+        .main_title .sub_title{
+          color: #acacac;
+          font-size: 16px;
+        }
+        .slidesjs-pagination-item{
+          width: 192px;
+        }
+        .slidesjs-pagination-item a{
+          width: 192px;
+        }
+        .slidesjs-pagination-item:nth-child(5){
+          width: 200px;
+          margin-right: 0;
+        }
+        .slidesjs-pagination-item:nth-child(5) a{
+          width: 200px;
+        }
+        .nav_content{
+          width: 980px;
+          height: 300px;
+        }
+        .main_anchor_btns{
+          margin-top: 30px;
+        }
+        .anchor_btn{
+          width: 325px;
+          height: 205px;
+          float: left;
+          border-left: 1px solid #e1e1e1;
+        }
+        .anchor_btn.last{
+          border-right: 1px solid #e1e1e1;
+        }
+        .anchor_btn img{
+          width: 300px;
+          height: 205px;
+          display: block;
+          margin: 0 auto;
+        }
+        .main_nav{
+          width: 980px;
+        }
+        
+        </style>
+    </head>
+
+
+  <body id="top" style='font-family: "hiragino sans gb", 微软雅黑;'>
+  		<div style="margn:20% 40%;padding:20% 40%">
+			正在跳转,还有<span id="delay" style="color:#FF0000;">4</span>秒钟自动跳转到文章列表，如果没有跳转(等不及)请
+      <a href="main.php" style="color:red;">点我点我点我点我</a>
+		</div>
+		<script language="javascript">
+    	function runtime() {
+     	document.getElementById('delay').innerHTML=document.getElementById('delay').innerHTML-1;
+     	if(document.getElementById('delay').innerHTML==0) {
+      	location.href='main.php';
+    	}
+     	setTimeout("runtime()",1000);
+    }
+    runtime();
+</script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Let's football it!</title>
+        <meta name="description" content="football football football!">
+        <meta name="keywords" content="football,manchester united,football team,football news,points table">
+        <meta charset="utf-8">
+        <link href="info.css" rel="stylesheet" type="css"/>
+        <link href="table.css" rel="stylesheet" type="css"/>
+        <link href="test1.css" rel="stylesheet" type="css"/>
+
+
+        <style>
+        .main_title{
+          font-size: 25px;
+        }
+        .main_title .sub_title{
+          color: #acacac;
+          font-size: 16px;
+        }
+        .footer1 {
+            background: #222;
+            color: #acacac;
+            width: 100%;
+        }
+        </style>
+        <script type="text/javascript">
+            function check_data(){
+                if (document.myForm.account.value.length==0) {alert("请输入邮箱")}
+                else if (document.myForm.account.value.length>15) {alert("请输入正确邮箱");}
+                else if (document.myForm.password.value.length==0) {alert("请输入密码");}
+                else if (document.myForm.password.value.length>15 ) {alert("密码长度需在15位内");}
+                else if (document.myForm.re_password.value.length==0) {alert("请输入确认密码");}
+                else if (document.myForm.password.value!=document.myForm.re_password.value) {alert("两次密码不一致");}
+                else myForm.submit()
+            }
+        </script>
+</head>
+
+ <body id="top" style='font-family: "hiragino sans gb", 微软雅黑;'>
+
+
+
+          <!--标题栏层-->
+          <div class="wide_max top_background" style="">
+          </div>
+
+          <div class="wide3 nav2">
+            <div class="row">
+                <div class="span1 span_row">
+
+                    <div class="nav_item_spliter"></div>
+                    <a href="main.php"><div class="nav_item">首页</div></a>   
+
+                    <div class="nav_item_spliter"></div>
+                    <a href="PTStable.php"><div class="nav_item">积分榜</div></a>
+                    
+
+                    <div class="nav_item_spliter"></div>
+                    
+                    <a href="player_info.php"><div class="nav_item">球员信息</div></a>
+                    
+
+                    <div class="nav_item_spliter"></div>
+                    
+                    <a href="results.php"><div class="nav_item">赛事</div></a>
+                    
+                    <div class="nav_item_spliter"></div>
+                    
+                    <a href="/exp"><div class="nav_item">论坛</div></a>
+                    
+                    <div class="nav_item_spliter"></div>
+
+                    <div class="user_info_btn">
+                        
+                    </div> 
+                </div>      
+            </div>
+          </div>
+
+          <div class="wide3" style="padding-top: 30px;">
+            <div class="row">
+                <div class="span9 bread span_row">
+                    <a href="main.php">首页</a> > <a href="register.htm">注册</a> 
+                    <a class="bread_login">已有账号?</a><a href="login.htm" class="bread_login1" style="color:#636363">登录</a>
+                </div>
+                
+            </div>
+
+            <div class="split1"></div>
+          </div>
+
+        <!--主体层-->
+        <form action="addmember.php" method="post" name="myForm">
+            
+            <div class="register">
+                <div class="create_id">
+                <label>Create your ID!</label>
+                </div>
+                <div class="register_content">
+                <div>
+                    <Label >邮箱</Label> 
+                    <input name="account" type="text" size="15">
+                </div>
+
+                <div>
+                    <Label >密码</Label>
+                    <input name="password" type="password" size="15">
+                </div>
+
+                <div>
+                    <Label >确认密码</Label>
+                    <input name="re_password" type="password" size="15">
+                </div>
+
+                <div class="input_button">
+                    <input type="button" value="注册" onClick="check_data()">
+                </div>
+                </div>
+            </div>
+        </form>
+
+
+
+          <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+
+           <!--页脚层-->
+        <div class="footer1">
+            <div class="container">
+                 <div>1152200 钟天杰 数据库课程设计</div>
+            </div>
+        </div>
+
+
+</body>
+
+          
+
+</html>
